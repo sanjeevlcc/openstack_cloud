@@ -1,0 +1,360 @@
+
+======================
+Openstack Train
+
+Module 
+
+	CL110  ==> Basic Level (Total 14 chapters)
+	CL210  ==> AdvanceLevel (Total 10 chapters)
+
+	       ==> 2-3 etra chapter to cover
+
+
+======================
+
+Official book ====> Hard copy
+		   Soft copy (official site)
+
+Book on Openstack v10 or v13
+
+
+======================
+
+Cerfication Duration  ==> 4 Hours ==> Practical Hands on Test
+
+
+======================
+
+Design Prepration Dummy Labs
+
+======================
+
+
+Exam Concept
+
+CL -110 - First Book ==> 60%
+CL -210 - Second Book ==> 40%
+
+======================
+
+Content : Theory Session + Practical Session
+		30%		70%
+======================
+
+Lab Option:
+
+1. Office Inhouse lab - Demo or Practice
+2. Personal Laptop - 
+	(RAM-8GB) 
+	(Disk Space 70GB)
+	(Processor i3,i5,i7)
+
+3. Here 8 GB RAM ==> 70% course will cover of CL110
+	(Design Single Node) ==> Most Practical ll be cover
+
+	(Multi Node Setup) ==> Live Infra <== Ready Infra
+
+
+4. Design Center Lab / or Cloud Demand
+
+======================
+
+Red Hat OpenStack Administration I: 
+-----------------------------------
+	Core Operations for Domain Operators (CL110) Training
+
+
+	Duration: 5 days
+	Language: English
+	Level: Intermediate
+
+
+
+
+======================
+docs.redhat.com
+
+https://access.redhat.com/documentation/en-us/red_hat_openstack_platform/10
+
+
+======================
+
+
+
+
+======================
+
+Essential skills covered in the course include the following:
+
+	• Launch instances to satisfy various use case examples.
+	• Manage domains, projects, users, roles, and quota in a multitenant environment.
+	• Manage networks, subnets, routers, and floating IP addresses.
+	• Manage instance security with group rules and access keys.
+	• Create and manage block, object, and shared storage within OpenStack.
+	• Perform instance launch customization with cloud-init.
+
+
+======================
+
+Details Course Information
+-----------------------------
+	• Module 1: Introduction to Red Hat OpenStack Platform
+	• Module 2: Manage application projects in a multitenant cloud
+	• Module 3: Manage OpenStack networking
+	• Module 4: Configure resources to launch a non-public instance
+	• Module 5: Configure virtual machine system disks
+	• Module 6: Provide additional storage strategies
+	• Module 7: Configure resources to launch an instance with public access
+	• Module 8: Automate customized cloud application launches
+	• Module 9: Manage cloud application placement
+
+
+======================
+
+
+
+CL110 V10 - Red Hat OpenStack Administration I
+-----------------------------------------------
+● Introduce launching an instance
+	○ Launch an instance and describe the OpenStack architecture and use cases.
+● Organize people and resources
+	○ Manage projects, users, roles, and quotas.
+● Describe cloud computing
+	○ Describe the changes in technology and processes for cloud computing.
+● Manage Linux networks
+	○ Administer Linux networks and bridges.
+● Prepare to deploy an instance with public access
+	○ Manage images, flavors, and private networks in preparation for launching
+	an instance.
+● Deploy an instance
+	○ Launch and verify an instance.
+● Manage block storage
+	○ Manage ephemeral and persistent block storage.
+● Manage object storage
+	○ Administer object storage.
+● Prepare to deploy an external instance
+	○ Manage external networks and security in preparation for launching an
+	instance with public access.
+● Deploy an instance with public access
+	○ Launch and verify an instance with public access.
+● Customize instances
+	○ Customize an instance with cloud-init.
+● Deploy scalable stacks
+	○ Deploy a stack and configure autoscaling.
+● Install an OpenStack overcloud
+	○ Install an OpenStack proof of concept using the director UI and provisioning
+	service templates.
+● Lab: Comprehensive review of CL110
+	○ Review tasks in the Red Hat OpenStack Administration I: Core Operations for
+	Cloud Operators course.
+
+
+
+
+
+
+======================
+What are the agenda?
+---------------
+	Cloud ?
+
+	Cloud Computing ?
+
+	Before cloud , how we work?
+
+	After cloud, what is market changes?
+
+	Features of Cloud Computing?
+
+	What are the requirement of cloud based infra?
+
+	Why we deploy openstack in any organization?
+
+
+
+======================
+
+
+Cloud ?
+	Physical resource that cannot see
+	Cloud is Datacentere
+	CPU RAM HD N/W
+	
+
+
+	
+Cloud Computing ?
+	Its a model
+	IAAS, SAAD, PAAS
+	public private hybrid
+	a service in IT infra
+	
+	a model that to be implemented as app, os, libraries, runtime
+	
+	SCALABLE
+
+
+Before cloud , how we work?
+	bare matel virtuizations
+	2010 nasa and rackspace found Openstack
+	resource tightly coupled
+	resource overprovison/ underprovisoon
+	one app bind one singe H/W resource
+
+	Office ==> Project ==> admin ==> machine
+		hardware configuration
+		OS
+		application
+		vendor
+		liscinecing cost		
+		deploy
+		testing
+		handover
+				take more time for planning
+
+
+
+
+After cloud, what is market changes?
+	on demand resouce allocation
+	current 8GB(RAM)  ===> 4 sec (UP ==> 16GB (UP)
+
+	busineess need
+		agile, cost optimization
+		effeciency, microservice
+		HW independent
+		pay as u go
+	better resorce consumption
+	market spike learn.
+
+	EX on company
+		Infra > Service > Hardware > OS > Service > Planning > testing
+		
+		Now this modes make faster workflow in comapany
+		or in industry
+		
+		better solution and better planning, fast product delivery
+
+	fast > SCALE IN and SCALE OUT
+		
+		
+
+
+
+Features of Cloud Computing?
+
+
+
+
+
+What are the requirement of cloud based infra?
+
+Why we deploy openstack in any organization?
+
+
+
+
+
+======================
+The NIST Definition of Cloud Computing
+
+https://nvlpubs.nist.gov/nistpubs/legacy/sp/nistspecialpublication800-145.pdf
+
+https://www.govinfo.gov/app/details/GOVPUB-C13-74cdc274b1109a7e1ead7185dfec2ada#:~:text=Cloud%20computing%20is%20a%20model,effort%20or%20service%20provider%20interaction.
+
+
+
+Essential Characteristics:
+-----------------------------
+	On-demand self-service
+	Resource pooling
+	Rapid elasticity
+	Measured service
+	Scalabiity
+
+
+
+
+	Shared Pool
+		Single HW fells and used by single user, 
+		but actually shared by multiple user.
+
+
+
+
+	Single-tanency
+		Single HW for sigle user or single project or single company.
+
+
+
+	Multitanency
+		Single HW for multiple user or multiple project or multiple company.
+		No backend dependency
+		
+		backend layer/ user or client layer	
+
+
+		example
+			20 floor house >> 1 floor / 2 floor ../5 floor
+			selling as rent >> tenent
+			
+			bill (quota) of > electricity > water
+			reffered as QUOTA LIMIT 
+
+
+
+
+
+
+
+
+Proof of concept ==> check google
+
+======================
+
+Scnerio 
+
+	XYZ datacenter >> hardware own >> admin own 
+		planning team own >> life cycle team own 
+		R n D team own > vendor other
+				[OS vendor + service vendor ]
+	
+
+
+
+	redhat OS + oenstack + nagios + inhouse service
+
+
+	
+======================
+======================
+Why we deploy openstack in any organization?
+
+======================
+
+
+
+======================
+
+
+
+======================
+
+
+======================
+
+
+
+
+
+======================
+
+
+
+======================
+
+
+======================
+
+
+
