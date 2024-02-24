@@ -271,6 +271,7 @@ Essential Characteristics:
 	Rapid elasticity
 	Measured service
 	Scalabiity
+	Telemetry
 
 
 
@@ -318,15 +319,11 @@ Scnerio
 		planning team own >> life cycle team own 
 		R n D team own > vendor other
 				[OS vendor + service vendor ]
-	
-
-
-
-	redhat OS + oenstack + nagios + inhouse service
+					redhat OS + oenstack + nagios + inhouse service
 
 
 	
-======================
+
 ======================
 Why we deploy openstack in any organization?
 
@@ -334,6 +331,292 @@ Why we deploy openstack in any organization?
 
 
 
+
+
+
+======================
+The primary difference between horizontal scaling and vertical scaling 
+is that horizontal scaling involves adding more machines or nodes to a 
+system, while vertical scaling involves adding more 
+power (CPU, RAM, storage, etc.) to an existing machine. 
+
+
+In other words, horizontal scaling involves scaling out, while vertical 
+scaling involves scaling up. Horizontal scaling is typically used to 
+handle increasing amounts of traffic or workload, while vertical scaling 
+is typically used to handle resource-intensive tasks or applications that 
+require more processing power.
+
+
+======================
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+======================
+Types of Service Models:
+
+
+
+	Software as a Service (SaaS)
+	Platform as a Service (PaaS)
+	Infrastructure as a Service (IaaS)
+
+
+
+
+
+
+Software as a Service (SaaS)
+	App => Browser
+
+
+Platform as a Service (PaaS)
+
+
+
+
+
+Infrastructure as a Service (IaaS)
+
+
+
+Database as a Service (DaaS) - ORACLE :)
+
+
+
+
+
+======================
+Private coud	
+	Oracle, single orgnizatin
+	manage on premise or off premise
+
+Public cloud
+	AWS
+
+Hybrid cloud
+	mixed
+
+======================
+
+What is Openstack?
+	set of service(or component added) to established in a node.
+
+	Openstack >> IaaS
+
+	Openshift >> PaaS
+
+
+======================
+
+Openstack release
+
+https://releases.openstack.org/
+
+Austin (2010.1)
+Bexar (2011.1)
+Cactus (2011.2)
+Diablo (2011.3)
+Essex (2012.1)
+Folsom (2012.2)
+Grizzly (2013.1)
+Havana (2013.2)
+Icehouse (2014.1)
+Juno (2014.2)
+Kilo (2015.1)
+Liberty (2015.2)
+Mitaka (2016.1)
+Newton (2016.2)
+Ocata (2017.1)
+Pike (2017.2)
+Queens (2018.1)
+Rocky (2018.2)
+Stein (2019.1)
+Train (2019.2)
+Ussuri (2020.1)
+Victoria (2020.2)
+Wallaby (2021.1)
+
+
+
+Red Hat had certifications for OpenStack versions such as 
+Red Hat OpenStack Platform 13, 16, and 17
+
+
+
+
+
+
+======================
+
+What are the components of Openstack?
+
+
+			Horizon (dashboard)
+				^
+				||
+Nova > Glance > Swift > Neutron > Cinder > Heat > Ceilometer > Keystone
+----------------------------primary component -------------------------
+
+
+
+
+
+Mandatory ( Horizon(keystone), gance, Nova, neutron, cinder)
+
+
+
+Horizon		GUI interface
+Keystone	Identity Service
+Nova 		Compute Service
+Glance		Image Service
+Neutron		Networking Service
+Cinder		Block Storage
+Swift		Object Storage
+Ceilometer	Telemetry
+Heat		Orchesstration
+
+
+
+
+
+
+
+
+
+Horizon: 
+	Horizon is the web-based dashboard for OpenStack. 
+	It provides a graphical user interface (GUI) for 
+	managing and provisioning resources in an OpenStack 
+	cloud environment.
+
+
+
+Keystone: Keystone is the identity service. 
+	It provides authentication and authorization services
+	for other OpenStack services, allowing users to 
+	securely authenticate and access resources based on 
+	their roles and permissions.
+
+
+
+Nova: 
+	Nova is the compute service in OpenStack. 
+	It manages the lifecycle of instances, providing 
+	the ability to launch, terminate, and manage virtual
+	machines (VMs) on a hypervisor.
+
+
+Glance: 
+	Glance is the image service. 
+	It manages virtual machine images, providing a 
+	catalog and repository for storing, discovering, 
+	and retrieving images used to create instances.
+	Contain minimum required software , including 
+	a bootable OS.
+
+
+Swift: 
+	Swift is the object storage service. 
+	It provides scalable and redundant storage for 
+	static data, such as images, backups, and other 
+	unstructured data.
+
+
+
+Neutron: 
+	Neutron is the networking service that provides 
+	networking capabilities to other OpenStack services. 
+	It allows users to create and manage networks, 
+	routers, subnets, and other networking resources.
+
+
+
+Cinder: 
+	Cinder is the block storage service. 
+	It provides persistent block storage to VMs in 
+	OpenStack, allowing users to create, attach, and 
+	detach block storage volumes to instances.
+
+
+
+Heat: 
+	Heat is the orchestration service. 
+	It allows users to define and manage infrastructure 
+	as code using templates, automating the deployment 
+	and scaling of resources in response to application 
+	requirements.
+
+
+Ceilometer:
+	Ceilometer is the telemetry service. 
+	It collects and processes data related to cloud 
+	usage, performance, and billing, providing metering 
+	and monitoring capabilities for resource management 
+	and optimization.
+
+
+
+
+Aodh: 
+	Aodh is the alarming service. 
+	It provides capabilities for defining and managing 
+	alarms based on telemetry data collected by 
+	Ceilometer, allowing users to set thresholds and 
+	trigger actions in response to specific events.
+
+
+Trove: 
+	Trove is the database service. 
+	It provides database-as-a-service (DBaaS) functionality, 
+	allowing users to easily provision and manage 
+	relational and non-relational database instances 
+	in an OpenStack environment.
+
+
+Sahara: 
+	Sahara is the data processing service. 
+	It provides capabilities for provisioning and 
+	managing big data processing frameworks, such as 
+	Hadoop, Spark, and Storm, enabling users to 
+	perform data analysis and processing tasks in 
+	OpenStack.
+
+
+
+
+======================
+
+
+
+
+
+
+======================
+
+
+
+
 ======================
 
 
@@ -345,6 +628,329 @@ Why we deploy openstack in any organization?
 
 
 
+======================
+
+
+======================
+
+
+
+======================
+
+
+======================
+
+
+
+======================
+
+
+======================
+
+
+
+======================
+
+
+======================
+
+
+
+======================
+
+
+======================
+
+
+
+======================
+
+
+======================
+
+
+
+======================
+
+
+======================
+
+
+
+======================
+
+
+======================
+
+
+
+======================
+
+
+======================
+
+
+
+======================
+
+
+======================
+
+
+
+======================
+
+
+======================
+
+
+
+======================
+
+
+======================
+
+
+
+======================
+
+
+======================
+
+
+
+======================
+
+
+======================
+
+
+
+======================
+
+
+======================
+
+
+
+======================
+
+
+======================
+
+
+
+======================
+
+
+======================
+
+
+
+======================
+
+
+======================
+
+
+
+======================
+
+
+======================
+
+
+
+======================
+
+
+======================
+
+
+
+======================
+
+
+======================
+
+
+
+======================
+
+
+======================
+
+
+
+======================
+
+
+======================
+
+
+
+======================
+
+
+======================
+
+
+
+======================
+
+
+======================
+
+
+
+======================
+
+
+======================
+
+
+
+======================
+
+
+======================
+
+
+
+======================
+
+
+======================
+
+
+
+======================
+
+
+======================
+
+
+
+======================
+
+
+======================
+
+
+
+======================
+
+
+======================
+
+
+
+======================
+
+
+======================
+
+
+
+======================
+
+
+======================
+
+
+
+======================
+
+
+======================
+
+
+
+======================
+
+
+======================
+
+
+
+======================
+
+
+======================
+
+
+
+======================
+
+
+======================
+
+
+
+======================
+
+
+======================
+
+
+
+======================
+
+
+======================
+
+
+
+======================
+
+
+======================
+
+
+
+======================
+
+
+======================
+
+
+
+======================
+
+
+======================
+
+
+
+======================
+
+
+======================
+
+
+
+======================
+
+
+======================
+
+
+
+======================
+
+
+======================
+
+
+
+======================
+
+
+======================
+
+
+
+======================
 
 
 ======================
